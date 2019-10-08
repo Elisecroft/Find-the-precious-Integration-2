@@ -1,0 +1,317 @@
+/* General */
+
+@font-face {
+	font-family: "Aniron";
+	src: url('assets/fonts/Aniron/Aniron-7BaP.ttf');
+}
+
+@font-face {
+	font-family: "Party Business";
+	src: url('assets/fonts/Party Business/partybusiness.ttf');
+}
+
+@font-face {
+	font-family: "Tengwar Annatar";
+	src: url('assets/fonts/Tengwar Annatar/tngan.ttf');
+}
+
+body {
+  min-height: 100%;
+}
+
+h1, h2, li, input, select {
+  font-family: Aniron;
+}
+
+h3, p {
+  font-family: 'Party Business';
+}
+
+.container-fluid h2, .container h2 {
+  font-size: 25px;
+}
+
+.margin {
+    margin-bottom: 45px;
+  }
+
+.symbols {
+  color: #ff5f01;
+  font-family: 'Tengwar Annatar';
+  font-size: 28px;
+}
+
+/* Navbar */
+
+.navbar {
+  padding: 5px 0px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+  display: none;
+}
+
+.navbar img {
+  margin-right: 40px;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar li:hover {
+  background-color: #EEEEEE;
+  
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFF;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #333;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.bg-dark {
+  background-color: #ff5f01 !important;
+}
+
+/* Carousel */
+
+.carousel-item img {
+    width: 100%;
+    min-height: 220px;
+    max-height: 575px;
+    margin: auto;
+}
+
+.caption-first {
+  position: absolute;
+  top: -300px;
+  font-size: 58px;
+  color: #FFF;
+  font-weight: 800;
+}
+
+.caption-second {
+  position: absolute;
+  top: -100px;
+  font-size: 38px;
+  color: #FFF;
+  font-weight: 600;
+}
+
+/* Cards */
+
+#fellows {
+  background-image: url("assets/img/bg_light.png");
+  padding: 45px 0px;
+}
+
+#fellows .row {
+  max-width: 100%;
+}
+
+#min {
+  font-size: 18px;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 10px 10px 0px 10px;
+}
+
+.card-block {
+  padding-left: 3.5%;
+  height: 150px;
+}
+
+.card-block p {
+  color: #FFF;
+  font-size: 35px;
+}
+
+.card-img-top {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+.reward {
+  position: absolute;
+  top: 5%;
+  left: 22%;
+  background-color: #eee;
+  color: #000;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.5% 2%;
+  display: none;
+  z-index: 100;
+}
+
+.orange {
+  color: #ff5f01;
+}
+
+.reward-dead {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+  font-size: 35px;
+  font-weight: 700;
+  display: none;
+  color: #ff5f01;
+  z-index: 100;
+}
+
+.card-title {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  color: #FFF;
+  padding-top: 10px;
+  font-size: 65px;
+}
+
+.card-dead {
+  left: 35%;
+  text-decoration: line-through #ff5f01;
+}
+
+.card-profile:hover .reward, .card-profile:hover .reward-dead {
+  display: block;
+}
+
+/* Form */
+
+#contact {
+  background-image: url(assets/img/bg_dark.png);
+}
+
+#contact h2 {
+  color: #FFF;
+  padding-top: 20px;
+  margin-left: 45px;
+}
+
+label {
+  font-size: 6px;
+  opacity: 0;
+}
+
+.form-group {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.form-control {
+  border-color: #000;
+  height: calc(2em + .75rem + 2px);
+}
+
+#message {
+  padding-top: 15px;
+  padding-bottom: 150px;
+}
+
+#send {
+  margin-top: 45px;
+  padding: 5px 10px;
+}
+
+#contact img {
+  max-height: 460px;
+  max-width: 100%;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 30px;
+  background-color:#ff5f01;
+  min-height: 100px;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer li a:hover {
+  text-decoration: none;
+  color: #CCC;
+}
+
+.socialLinks a {
+  font-weight: 700;
+} 
+
+
+/* Media Query */
+
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .card-block {
+    height: 225px;
+  }
+  
+  .reward {
+    font-size: 15px;
+    left: 10%;
+  }
+
+  .reward-dead {
+    left: 26%;
+  }
+
+  .card-title {
+    top: 20%;
+    left: 10%;
+  }
+
+  .card-dead {
+    top: 20%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar img {
+    margin-right: 0px;
+  }
+  
+  .caption-first, .caption-second {
+    display: none;
+  }
+
+  .container-fluid h2, .container h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .reward {
+    left: 7%;
+  }
+}
